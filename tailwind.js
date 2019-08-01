@@ -221,6 +221,7 @@ module.exports = {
       'Georgia',
       'serif',
     ],
+    fancy: ['BlinkMacSystemFont'],
     mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
   },
 
