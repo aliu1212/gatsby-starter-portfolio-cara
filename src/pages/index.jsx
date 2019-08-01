@@ -6,6 +6,7 @@ import { Parallax } from 'react-spring/renderprops-addons.cjs'
 // Components
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
+import TechnologyCard from '../components/TechnologyCard'
 
 // Elements
 import Inner from '../elements/Inner'
@@ -14,6 +15,7 @@ import { Title, BigTitle, Subtitle } from '../elements/Titles'
 // Views
 import Hero from '../views/Hero'
 import Projects from '../views/Projects'
+import Technologies from '../views/Technologies'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
@@ -29,6 +31,20 @@ const ProjectsWrapper = styled.div`
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+`
+
+const TechnologiesWrapper = styled.div`
+  ${tw`flex flex-wrap space-between mt-8`};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 3fr;
     grid-gap: 2rem;
   }
 `
@@ -54,7 +70,7 @@ const ContactText = styled.p`
 `
 
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-xs`};
 `
 
 const Index = () => (
@@ -100,6 +116,46 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
+      <Technologies offset={2}>
+        <Title>Technologies</Title>
+        <ContactText>
+          Technologies I love using:
+        </ContactText>        
+        <TechnologiesWrapper>
+          <TechnologyCard
+            link="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png"
+            name="github"
+          />
+          <TechnologyCard
+            link="https://cdn1.iconfinder.com/data/icons/logos-and-brands-3/512/187_Js_logo_logos-256.png"
+            name="javascript"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+          <TechnologyCard
+            link="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-256.png"
+            name="react"
+          />
+        </TechnologiesWrapper>
+      </Technologies>
       <About offset={3}>
         <Title>About</Title>
         <AboutHero>
