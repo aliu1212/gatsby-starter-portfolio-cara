@@ -162,7 +162,7 @@ const Index = () => (
           <Avatar src={avatar} alt="Alex Liu" />
           <AboutSub>
             I am a software engineer and have a passion for systematic problem solving 
-            and building beautiful interfaces with as low friction as possible :)
+            and building beautiful interfaces with as little friction as possible :)
           </AboutSub>
         </AboutHero>
         <AboutDesc>
